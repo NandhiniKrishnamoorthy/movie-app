@@ -1,0 +1,16 @@
+.main_card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.card_image{
+    /*  max-width: 100%; */
+    width: 100%; 
+    height: 300px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;    
+}
