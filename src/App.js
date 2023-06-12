@@ -22,6 +22,7 @@ function App() {
     setApiData(result);
     localStorage.setItem("apiData", JSON.stringify(result));
     localStorage.setItem("movieData", JSON.stringify(apiData.movies));
+    // localStorage.setItem("movieData", JSON.stringify(apiData.movies));
   }
 
   useEffect(() => {    

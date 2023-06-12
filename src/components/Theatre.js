@@ -6,7 +6,7 @@ const Theatre = () => {
     return (
         <Box>
             <Header />  
-            <TheatreCard />                     
+            {/* <TheatreCard />                      */}
         </Box>
     )
 }
