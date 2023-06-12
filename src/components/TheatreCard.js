@@ -5,7 +5,7 @@ import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 
 const TheatreCard = () => {    
-    const [selectedTheatre, setSelectedTheatre] = useState({}); 
+    // const [selectedTheatre, setSelectedTheatre] = useState({}); 
     const apiData =  JSON.parse(localStorage.getItem("apiData"));
     const cardData = apiData.theatre;    
     const isMobile = useBreakpointValue({ base: true, md: false });
@@ -14,7 +14,7 @@ const TheatreCard = () => {
 
     const handleClick = (theatre) => {        
         const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        setSelectedTheatre(theatre)
+        // setSelectedTheatre(theatre)
         localStorage.setItem("selectedTheatre",JSON.stringify(theatre)); 
         navigate("/showDetails")
 
@@ -24,7 +24,8 @@ const TheatreCard = () => {
             const dateStr = dateArray[0]
             const monthStr = Number(dateArray[1].split("")[0] === '0' ? dateArray[1].split("").splice(1, 1) : dateArray[1])
             const yearStr = dateArray[2]
-            dateinString.push(dateStr+" "+month[monthStr-1]+","+yearStr)            
+            dateinString.push(dateStr+" "+month[monthStr-1]+","+yearStr) 
+            return "";           
             })
         }
         localStorage.setItem("dateinString",JSON.stringify(dateinString)); 

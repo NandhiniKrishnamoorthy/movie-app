@@ -70,7 +70,7 @@ const BookingSlotsModal = (props) => {
 }
 
 const ShowDetails = () => {
-    const [selectedDate, setSelectedDate] = useState({});
+    // const [selectedDate, setSelectedDate] = useState({});
     const [selectedTime, setSelectedTime] = useState("");
     const [selectedMovie, setSelectedMovie] = useState("");
     const [bookedDate, setBookedDate] = useState("");
@@ -94,6 +94,7 @@ const ShowDetails = () => {
 
     const consolidateObject = (item) => {
         // Create a separate array of Objects based on shows
+        setBookedDate("Today");
         delete item["date"]
         let ResponseJsonArray = [];
         let keys = Object.keys(item);
@@ -133,7 +134,7 @@ const ShowDetails = () => {
                 if (key1.includes(key2.split("_")[0]) && key1.includes("movie")) item[key1] = selectedTheatre[key1]
             }
         }
-        setSelectedDate(item);
+        // setSelectedDate(item);
         setBookedDate(dateinString[index]);
         setSelectedIndexDate(index);
         setSelectedIndexTime(1000);

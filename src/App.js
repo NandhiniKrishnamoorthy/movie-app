@@ -29,7 +29,7 @@ function App() {
       "user_mail_id": "sample@gmail.com"
     }    
     fetchDetails(data)
-  },[])  
+  })  
 
   return (
     <ChakraProvider>
