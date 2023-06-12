@@ -1,7 +1,6 @@
 import { Box, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { Location } from "@emotion-icons/entypo";
 import { ArrowRightCircle, StarFill } from "@emotion-icons/bootstrap";
-import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 
 const TheatreCard = () => {    
