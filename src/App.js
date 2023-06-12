@@ -5,6 +5,7 @@ import Theatre from '../src/components/Theatre.js'
 import Movies from '../src/components/Movies.js';
 import { ChakraProvider } from '@chakra-ui/react'
 import ShowDetails from "../src/components/ShowDetails"
+import Home from "../src/components/Home";
 
 export const MovieContext = createContext();
 
@@ -38,8 +39,8 @@ function App() {
         <div className="App">        
           <Router>
             <Routes>
-              <Route exact path='/' element={< Theatre />}></Route>
-              {/* <Route path='/theatres' element={< Theatre />}></Route> */}
+              <Route exact path='/' element={< Home />}></Route>
+              <Route path='/theatres' element={< Theatre />}></Route>
               <Route path='/movies' element={< Movies />}></Route>
               <Route path='/showDetails' element={< ShowDetails />}></Route>
             </Routes>
