@@ -5,7 +5,7 @@ import {
     ModalContent, Alert,
     AlertIcon,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Header from "../components/Header"
 import { StarFill } from "@emotion-icons/bootstrap";
 

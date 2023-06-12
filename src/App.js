@@ -1,12 +1,10 @@
 import './App.css';
-import { useEffect, useState, createContext, useContext } from 'react';
+import { useEffect, useState, createContext} from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Theatre from '../src/components/Theatre.js'
 import Movies from '../src/components/Movies.js';
-import Home from '../src/components/Home';
 import { ChakraProvider } from '@chakra-ui/react'
 import ShowDetails from "../src/components/ShowDetails"
-import Header from "../src/components/Header"
 
 export const MovieContext = createContext();
 
